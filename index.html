@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body onkeydown="keyHandler(event)">
+    <div class="calculator-body">
+      <div class="grid-container">
+        <div class="display">
+          <div class="display-box">
+            <span id="display-text">0</span>
+          </div>
+        </div>
+        <div class="btn">
+          <button
+            class="inner-button operation"
+            id="mrc"
+            onclick="memoryHandler('mrc')"
+          >
+            MRC
+          </button>
+        </div>
+        <div class="btn">
+          <button class="inner-button operation" onclick="memoryHandler('m-')">
+            M-
+          </button>
+        </div>
+        <div class="btn">
+          <button class="inner-button operation" onclick="memoryHandler('m+')">
+            M+
+          </button>
+        </div>
+        <div class="btn">
+          <button class="inner-button operation" onclick="cleanDisplay()">
+            C
+          </button>
+        </div>
+        <div class="btn">
+          <button
+            class="inner-button operation"
+            onclick="calculateHandler(innerText)"
+          >
+            &radic;
+          </button>
+        </div>
+        <div class="btn">
+          <button
+            class="inner-button operation"
+            onclick="calculateHandler(innerText)"
+          >
+            %
+          </button>
+        </div>
+        <div class="btn">
+          <button
+            class="inner-button operation"
+            onclick="calculateHandler(innerText)"
+          >
+            x<sup>2</sup>
+          </button>
+        </div>
+        <div class="btn">
+          <button
+            class="inner-button operation"
+            onclick="calculateHandler(value)"
+            value="/"
+          >
+            ÷
+          </button>
+        </div>
+        <div class="btn">
+          <button class="inner-button" onclick="calculateHandler(innerText)">
+            7
+          </button>
+        </div>
+        <div class="btn">
+          <button class="inner-button" onclick="calculateHandler(innerText)">
+            8
+          </button>
+        </div>
+        <div class="btn">
+          <button class="inner-button" onclick="calculateHandler(innerText)">
+            9
+          </button>
+        </div>
+        <div class="btn">
+          <button
+            class="inner-button operation"
+            onclick="calculateHandler(value)"
+            value="*"
+          >
+            x
+          </button>
+        </div>
+        <div class="btn">
+          <button class="inner-button" onclick="calculateHandler(innerText)">
+            4
+          </button>
+        </div>
+        <div class="btn">
+          <button class="inner-button" onclick="calculateHandler(innerText)">
+            5
+          </button>
+        </div>
+        <div class="btn">
+          <button class="inner-button" onclick="calculateHandler(innerText)">
+            6
+          </button>
+        </div>
+        <div class="btn">
+          <button
+            class="inner-button operation"
+            onclick="calculateHandler(innerText)"
+          >
+            -
+          </button>
+        </div>
+        <div class="btn">
+          <button class="inner-button" onclick="calculateHandler(innerText)">
+            1
+          </button>
+        </div>
+        <div class="btn">
+          <button class="inner-button" onclick="calculateHandler(innerText)">
+            2
+          </button>
+        </div>
+        <div class="btn">
+          <button class="inner-button" onclick="calculateHandler(innerText)">
+            3
+          </button>
+        </div>
+        <div class="btn">
+          <button
+            class="inner-button operation"
+            onclick="calculateHandler(innerText)"
+          >
+            +
+          </button>
+        </div>
+        <div class="btn">
+          <button class="inner-button" onclick="calculateHandler(innerText)">
+            0
+          </button>
+        </div>
+        <div class="btn">
+          <button class="inner-button" onclick="calculateHandler(innerText)">
+            00
+          </button>
+        </div>
+        <div class="btn">
+          <button class="inner-button" onclick="calculateHandler(innerText)">
+            .
+          </button>
+        </div>
+        <div class="btn">
+          <button
+            class="inner-button operation"
+            id="equal"
+            onclick="calculateHandler(innerText)"
+          >
+            =
+          </button>
+        </div>
+      </div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
